@@ -1,0 +1,127 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body */
+body {
+  background: #000000;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #000;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.navbar li {
+  cursor: pointer;
+}
+
+.logo {
+  color: cyan;
+  height: 50px;
+  width: 50px;
+}
+
+/* HERO */
+.hero {
+  height: 300px;
+   background: url("src/img/background.png")center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 32px;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* ABOUT */
+.about {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 40px;
+}
+
+.about-left {
+  width: 30%;
+}
+
+.about-right {
+  width: 40%;
+  line-height: 1.5;
+}
+
+/* EDUCATION */
+.education {
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.edu-item {
+  margin-top: 40px;
+}
+
+.edu-item span {
+  display: block;
+  margin: 10px 0;
+  color: gray;
+}
+
+/* PROJECTS */
+.projects {
+  padding: 60px 40px;
+  text-align: center;
+  background: url("img2.png") center/cover;
+}
+
+.project-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  width: 200px;
+  height: 120px;
+  background: #ccc;
+}
+
+/* CONTACT */
+.contact {
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.contact-box {
+  width: 200px;
+  height: 120px;
+  background: #ccc;
+  margin: 20px auto;
+}
+
+.social span {
+  margin: 10px;
+  font-size: 20px;
+}
