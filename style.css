@@ -39,12 +39,26 @@ body {
 
 /* HERO */
 .hero {
+  position: relative; /* important */
   height: 300px;
-   background: url("src/img/background.png")center/cover;
+  background: url("src/img/background.png") center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+
+/* wave */
+.wave {
+  position:absolute;
+  bottom: -1px;
+  left: -1px;
+  width: 101%;
+
+  display: block;
+  pointer-events: none; /* no click, no interaction */
+  user-select: none; /* can't select */
 }
 
 .hero h1 {
@@ -92,7 +106,7 @@ body {
 .projects {
   padding: 60px 40px;
   text-align: center;
-  background: url("img2.png") center/cover;
+  background: url("/src/img/backgFky.png") center/cover;
 }
 
 .project-grid {
