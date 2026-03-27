@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <!--import-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
@@ -13,32 +15,31 @@
     <nav class="navbar">
       <img class="logo" src="./src/img/logo.png">
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Education</li>
-        <li>Projects</li>
-        <li>Contact</li>
-      </ul>
+  <li><a href="#hero">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#education">Education</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
     </nav>
   
   </header>
 
   <!-- HERO -->
-  <section class="hero">
+  <section id="hero" class="hero">
     <div class="hero-content">
       <h1>Jean Ribeiro</h1>
-      <p>Frontend developer</p>
-      <img class="wave" src="src/img/container.svg">
+      <h2 style="color: #494949;">Frontend developer</h2>
   
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section class="about">
+  <section id="about" class="about">
     <div class="about-left">
       <h2>ABOUT</h2>
-      <p><strong>Email:</strong> aaaaaa@gmail.com</p>
-      <p><strong>Phone:</strong> +55 12 99137 1731</p>
+      <p><strong style="color: #00c3ff;">Email:</strong> aaaaaa@gmail.com</p>
+      <p><strong style="color: #00c3ff;">Phone:</strong> +55 12 99137 1731</p>
     </div>
 
     <div class="about-right">
@@ -53,10 +54,11 @@
   </section>
 
   <!-- EDUCATION -->
-  <section class="education">
+  <section id="education" class="education">
     <h2>EDUCATION</h2>
 
     <div class="edu-item">
+      <img src="/src/img/etec.png">
       <h3>ETEC - Escola Técnica Estadual de São Paulo</h3>
       <span>Feb 2021 - Dec 2023</span>
       <p>
@@ -68,14 +70,18 @@
     </div>
 
     <div class="edu-item">
+      <img src="/src/img/freec.png">
       <h3>freeCodeCamp</h3>
       <span>Oct 2025</span>
       <p>B1 english, Javascript, Responsive web design</p>
     </div>
+
+    
   </section>
+  
 
   <!-- PROJECTS -->
-  <section class="projects">
+  <section id="projects" class="projects">
     <h2>Projects</h2>
 
     <div class="project-grid">
@@ -83,22 +89,32 @@
       <div class="card"></div>
       <div class="card"></div>
     </div>
+
   </section>
 
   <!-- CONTACT -->
-  <section class="contact">
+  <section id="contact" class="contact">
     <h2>Contact</h2>
 
     <div class="contact-box"></div>
 
     <div class="social">
-      <span>🌐</span>
-      <span>📷</span>
-      <span>💼</span>
-    </div>
+  <a href="https://www.instagram.com/jr_web8/" target="_blank">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
 
-    <p><strong>Email:</strong> aaaaaa@gmail.com</p>
-    <p><strong>Phone:</strong> +55 12 99137 1731</p>
+  <a href="https://github.com/JeanRibeiro8?tab=repositories" target="_blank">
+    <i class="fa-brands fa-github"></i>
+  </a>
+
+  <a href="https://www.linkedin.com/in/jean-ribeiro-9a3792267/" target="_blank">
+    <i class="fa-brands fa-linkedin"></i>
+  </a>
+</div>
+
+     <p><strong style="color: #00c3ff;">Email:</strong> aaaaaa@gmail.com</p>
+      <p><strong style="color: #00c3ff;">Phone:</strong> +55 12 99137 1731</p>
+ 
   </section>
 
 </body>
