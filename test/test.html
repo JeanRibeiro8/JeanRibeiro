@@ -1,0 +1,99 @@
+<style>
+
+/*FOUNDATION*/
+
+.translucent-form-overlay {
+  max-width: 500px;
+  width: 100%;
+  background-color: rgba(54, 54, 54, 0.8);
+  padding: 20px;
+  color: #fefefe;
+}
+
+.translucent-form-overlay .columns.row {
+  display: block;
+}
+
+.translucent-form-overlay h3, .translucent-form-overlay label {
+  color: #fefefe;
+}
+
+.translucent-form-overlay input, .translucent-form-overlay select {
+  color: #8a8a8a;
+}
+
+.translucent-form-overlay input::-webkit-input-placeholder {
+  color: #8a8a8a;
+}
+
+.translucent-form-overlay input:-ms-input-placeholder {
+  color: #8a8a8a;
+}
+
+.translucent-form-overlay input::placeholder {
+  color: #8a8a8a;
+}
+
+
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAAAAAA</title>
+</head>
+<body>
+    <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+
+    <!--FOUNDATION FORM-->
+    <div class="translucent-form-overlay">
+  <form>
+    <h3>Search for Properties</h3>
+    <div class="row columns">
+      <label>Keyword
+        <input type="text" name="keyword" placeholder="Any">
+      </label>
+    </div>
+    <div class="row columns">
+      <label>Property Status
+        <select name="status" type="text">
+          <option>Any</option>
+          <option value="rent">Rent</option>
+          <option value="buy">Buy</option>
+        </select>
+      </label>
+    </div>
+    <div class="row columns">
+      <label>Property Type
+        <select name="status" type="text">
+          <option>Any</option>
+          <option value="office">Office</option>
+          <option value="building">Building</option>
+        </select>
+      </label>
+    </div>
+    <div class="row columns">
+      <label>Location
+        <input type="text" name="location" placeholder="Any">
+      </label>
+    </div>
+    <div class="row">
+      <label class="columns small-12">Price</label>
+      <div class="columns small-6">
+        <input type="number" min="0" name="min" placeholder="Min">
+      </div>
+      <div class="columns small-6">
+        <input type="number" min="0" name="max" placeholder="Max">
+      </div>
+    </div>
+    <button type="button" class="primary button expanded search-button">
+      Search
+    </button>
+ </form>
+</div>
+</body>
+</html>
