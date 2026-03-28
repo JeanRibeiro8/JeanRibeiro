@@ -12,30 +12,6 @@ body {
   color: white;
 }
 
-/* navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-  background: #000;
-}
-
-.navbar ul {
-  display: flex;
-  gap: 30px;
-  list-style: none;
-}
-
-.navbar li {
-  cursor: pointer;
-}
-
-.logo {
-  color: cyan;
-  height: 50px;
-  width: 50px;
-}
 
 /*EFFECTS*/
 /* remove default link styles */
@@ -54,9 +30,56 @@ a:hover {
   color: inherit;
 }
 
-/* active (quando clica) */
+/* active (while click) */
 a:active {
   color: inherit;
+}
+
+/*HOVER EFFECT*/
+.navbar a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* hover color */
+.navbar a:hover {
+  color: #026EB6;
+}
+
+
+
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+    z-index: 1000;
+
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #000;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.navbar li {
+  cursor: pointer;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
 }
 
 
@@ -65,7 +88,7 @@ a:active {
 /* HERO */
 .hero {
   position: relative; /* important */
-  height: 300px;
+  height: 500px;
   background: url("src/img/background.png") center/cover;
   display: flex;
   justify-content: center;
@@ -93,13 +116,19 @@ a:active {
   width: 30%;
 }
 
+.about-left h2{
+  margin-top: 10%;
+}
+
 .about-right {
+   margin-top: 2%;
   width: 40%;
   line-height: 1.5;
 }
 
 /* EDUCATION */
 .education {
+   margin-top: 10%;
    margin-left: 40px;
   text-align: left;
   padding: 60px 40px;
