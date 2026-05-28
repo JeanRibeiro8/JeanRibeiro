@@ -64,7 +64,7 @@ a:active {
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
-  background: #000;
+  background-color: #000000;
 }
 
 .navbar ul {
@@ -89,7 +89,7 @@ a:active {
 .hero {
   position: relative; /* important */
   height: 500px;
-  background: url("src/img/background.png") center/cover;
+  background: url("./src/img/background.png") center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,23 +145,110 @@ a:active {
 }
 
 /* PROJECTS */
-.projects {
+
+
+/* INDEX - GALERY *********/
+
+
+    /* PROJECTS */
+
+.projects-section{
+  background: #050505;
+}
+
+/* CARD */
+
+.project-card{
+  position: relative;
+
+  display: block;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  text-decoration: none;
+
+  transition: 0.4s;
+
+  border: 2px solid #1a1a1a;
+}
+
+/* IMAGE */
+
+.project-card img{
+  width: 100%;
+  height: 260px;
+
+  object-fit: cover;
+
+  transition: 0.5s;
+}
+
+/* OVERLAY */
+
+.project-overlay{
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.9),
+    rgba(0,0,0,0.2)
+  );
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: end;
+
+  padding: 25px;
+
+  color: white;
+}
+
+/* TITLE */
+
+.project-overlay h3{
+  font-size: 28px;
+
+  font-weight: bold;
+}
+
+/* TEXT */
+
+.project-overlay p{
+  color: #cfcfcf;
+
+  margin-top: 5px;
+}
+
+/* HOVER */
+
+.project-card:hover{
+  transform: translateY(-10px);
+
+  box-shadow:
+  0 0 20px rgba(0,195,255,0.4),
+  0 0 50px rgba(0,195,255,0.2);
+
+  border-color: #00c3ff;
+}
+
+/* IMAGE ZOOM */
+
+.project-card:hover img{
+  transform: scale(1.08);
+}
+
+
+/*****/
+.projects-section {
   padding: 60px 40px;
   text-align: center;
-  background: url("/src/img/backgFky.png") center/cover;
-}
-
-.project-grid {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.card {
-  width: 200px;
-  height: 120px;
-  background: #ccc;
+  background: url("src/img/backgFky.png") center/cover;
 }
 
 /* CONTACT */
