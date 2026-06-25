@@ -1,309 +1,371 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
-  <meta charset="UTF-8">   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jean Ribeiro - Portfolio</title>
-  <link rel="icon" href="./src/img/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JR | Freelance Frontend Developer & Web Designer</title>
+     <link rel="icon" href="./src/img/favicon.png">
+       <link rel="stylesheet" href="./src/style/style.css">
 
-  <!--import-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!--BOOTSTRAP-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<!--STYLE-->
-<link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body>
-<!-- TRY MAKE THE FUNCTION OF DIRECT URL FOR JAVASCRIPT -------------->
-  <!-- NAVBAR -->
- <header>
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-1 fixed-top">
-
-    <div class="container">
-
-      <!-- LOGO -->
-      <a class="navbar-brand" href="#">
-
-        <img src="./src/img/logo.png" width="50">
-
-      </a>
-
-      <!-- MOBILE BUTTON -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#menu">
-
-        <span class="navbar-toggler-icon"></span>
-
-      </button>
-
-      <!-- MENU -->
-      <div class="collapse navbar-collapse" id="menu">
-
-        <ul class="navbar-nav ms-auto gap-lg-4 text-center">
-
-          <li class="nav-item">
-            <a class="nav-link" href="#hero">Home</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#education">Education</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </div>
-
-  </nav>
-
-</header>
-
-  <!-- HERO -->
-  <section id="hero" class="hero">
-    <div class="hero-content">
-      <h1>Jean Ribeiro</h1>
-      <h2 style="color: #494949;">Frontend developer</h2>
-  
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="about">
-    <div class="about-left">
-      <h2>ABOUT</h2>
-      <p><strong style="color: #00c3ff;">Email:</strong> jeanrsantos10@gmail.com</p>
-      <p><strong style="color: #00c3ff;">Phone:</strong> +55 12 99137 1731</p>
-    </div>
-
-    <div class="about-right">
-      <p>
-        Fullstack Developer I have basic knowledge since 2021
-        in front-end languages and frameworks, PHP, SQL,
-        Javascript, Wordpress, Figma. I really enjoy creating
-        easy and intuitive websites to provide the best user
-        experience.
-      </p>
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section id="education" class="education"><br><br>
-    <h2>EDUCATION</h2>
-
-    <div class="edu-item">
-      <img src="src/img/etec.png">
-      <h3>ETEC - Escola Técnica Estadual de São Paulo</h3>
-      <span>Feb 2021 - Dec 2023</span>
-      <p>
-        Computer technician specializing in internet development; Software, Hardware,
-        Programming Logic, Information Security, Web Content Management,
-        Databases, Mobile Application Development, UI/UX, JavaScript, PHP, SQL,
-        Frontend, WordPress.
-      </p>
-    </div>
-
-    <div class="edu-item">
-      <img src="src/img/uninter.png">
-      <h3>Uninter</h3>
-      <span>Feb 2026</span>
-      <p>Systems analysis and development, Javascript, Responsive web design</p>
-    </div>
-
-    
-  </section>
-
-
-<!-- PROJECTS -->
-<section id="projects" class="projects-section py-5">
-
-  <div class="container">
-
-    <!-- TITLE -->
-    <div class="text-center mb-5">
-
-      <h2 class="fw-bold display-5 text-white">
-        My Projects
-      </h2>
-
-    </div>
-
-    <!-- GRID -->
-    <div class="row g-4">
-
-      <!-- PROJECT 1 -->
-      <div class="col-md-6 col-lg-4">
-
-        <a
-          href="https://github.com/JeanRibeiro8/barber-site"
-          target="_blank"
-          class="project-card">
-
-          <img
-            src="./src/img-sites/barber-site.png"
-            alt="Barber site">
-
-          <div class="project-overlay">
-
-            <h3>
-              Barber site
-            </h3>
-
-            <p>
-              A barbershop landing page
-            </p>
-
-          </div>
-
-        </a>
-
-      </div>
-
-      <!-- PROJECT 2 -->
-      <div class="col-md-6 col-lg-4">
-
-        <a
-          href="https://github.com/JeanRibeiro8/gym-site"
-          target="_blank"
-          class="project-card">
-
-          <img
-            src="./src/img-sites/gym-site.png"
-            alt="Gym Site">
-
-          <div class="project-overlay">
-
-            <h3>
-              Gym Site
-            </h3>
-
-            <p>
-              A gym landing page
-            </p>
-
-          </div>
-
-        </a>
-
-      </div>
-
-      <!-- PROJECT 3 -->
-      <div class="col-md-6 col-lg-4">
-
-        <a
-          href="https://jeanribeiro8.github.io/TecSchool/"
-          target="_blank"
-          class="project-card">
-
-          <img
-            src="./src/img-sites/tech-site.png"
-            alt="Techschool Site">
-
-          <div class="project-overlay">
-
-            <h3>
-              Techschool Site
-            </h3>
-
-            <p>
-              A school institutional website about technology.
-            </p>
-
-          </div>
-
-        </a>
-
-      </div>
-
-
-       <!-- PROJECT 4 -->
-      <div class="col-md-6 col-lg-4">
-
-        <a
-          href="https://github.com/JeanRibeiro8/javascript"
-          target="_blank"
-          class="project-card">
-
-          <img
-            src="./src/img-sites/javascript.png"
-            alt="Javascript">
-
-          <div class="project-overlay">
-
-            <h3>
-              Javascript Projects
-            </h3>
-
-            <p>
-              Calculator, Timer, To-do list, Weather-app
-            </p>
-
-          </div>
-
-        </a>
-
-      </div>
-
-
-
-    </div>
-
-  </div>
-
-</section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-
-    <form class="contact-form" action="https://formspree.io/f/xreoekev" method="POST">
-  <input type="text" name="name" placeholder="Your name" required>
-  <input type="email" name="email" placeholder="Your email" required>
-  <textarea name="message" placeholder="Your message" rows="5" required></textarea>
-  <button type="submit">Send</button>
-</form>
-
-    <div class="social">
-  <a href="https://www.instagram.com/jr_web8/" target="_blank">
-    <i class="fa-brands fa-instagram"></i>
-  </a>
-
-  <a href="https://github.com/JeanRibeiro8?tab=repositories" target="_blank">
-    <i class="fa-brands fa-github"></i>
-  </a>
-
-  <a href="https://www.linkedin.com/in/jean-ribeiro-9a3792267/" target="_blank">
-    <i class="fa-brands fa-linkedin"></i>
-  </a>
-</div>
-
-     <p><strong style="color: #00c3ff;">Email:</strong> jeanrsantos10@gmail.com</p>
-      <p><strong style="color: #00c3ff;">Phone:</strong> +55 12 99137 1731</p>
- 
-  </section>
-  <!--emailJS-->
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
-  <!--SCRIPT-->
-  <script src="/src/script/script.js"></script>
+<body class="tail-container bg-zinc-950 text-white overflow-x-hidden">
+    <!-- NAV -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full flex items-center justify-center text-xl font-bold">
+                    <img src="./src/img/logo.png">
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#work" class="hover:text-orange-400 transition-colors">Trabalhos</a>
+                <a href="#about" class="hover:text-orange-400 transition-colors">Sobre</a>
+                <a href="#skills" class="hover:text-orange-400 transition-colors">Skills</a>
+                <a href="#testimonials" class="hover:text-orange-400 transition-colors">Feedback</a>
+                <a href="#contact" class="hover:text-orange-400 transition-colors">Contato</a>
+            </div>
+            
+            <a href="#contact" 
+               class="bg-orange-700 hover:bg-orange-600 px-6 py-3 rounded-full text-sm font-semibold transition-all flex items-center gap-2">
+                Vamos Conversar 
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero-bg min-h-screen pt-24 flex items-center">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center gap-2 bg-zinc-900 border border-gray-500/30 text-white-400 text-sm px-4 py-2 rounded-full">
+                    <div class="w-2 h-2 bg-orange-600 rounded-full animate-pulse"></div>
+                    Disponível para novos projetos – 2026
+                </div>
+                <!--1.CENTER-->
+                <h1 class="text-6xl md:text-7xl font-bold leading-tight heading-font">
+                    Freelance<br>
+                    <span class="text-orange-500">Frontend Developer</span><br>
+                    &amp; Web Designer.
+                </h1>
+                
+                <p class="text-xl text-zinc-400 max-w-lg">
+                  Sou freelancer de Web Design e Desenvolvimento Frontend. Crio landing pages e sites modernos, responsivos e otimizados para oferecer uma excelente experiência ao usuário. Trabalho com HTML, CSS, JavaScript e Figma, unindo design e tecnologia para gerar resultados reais.
+ </p>
+                
+                <div class="flex flex-wrap gap-4"> <!--2.CENTER-->
+                    <a href="#work" 
+                       class="bg-orange-500 hover:bg-orange-600 px-8 py-4 rounded-full font-semibold text-lg inline-flex items-center gap-3 transition-all">
+                        Veja meus trabalhos
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" 
+                       class="border border-zinc-700 hover:border-zinc-400 px-8 py-4 rounded-full font-semibold text-lg transition-all">
+                        Entre em contato
+                    </a>
+                </div>
+
+                <!-- Stats -->
+                <div class="flex gap-12 pt-8">
+                    <div class="mb-8">
+                        <div class="text-4xl font-semibold text-orange-400">10+</div>
+                        <div class="text-sm text-zinc-500">PROJETOS FEITOS</div>
+                    </div>
+                    <!--
+                    <div>
+                        <div class="text-4xl font-semibold text-orange-400">5yrs</div>
+                        <div class="text-sm text-zinc-500">CRIANDO SITES</div>
+                    </div> -->
+
+                    <!-- WHEN HAVE CLIENTS
+                    <div>
+                        <div class="text-4xl font-semibold text-orange-400">100%</div>
+                        <div class="text-sm text-zinc-500">CLIENTES SATIFEITOS</div>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- Photo -->
+            <div class="relative">
+                <div class="aspect-square bg-zinc-900 rounded-3xl overflow-hidden border border-orange-500/20 shadow-2xl">
+                    <img src="./src/img/myJR.png"
+                         alt="JR Portrait" 
+                         class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -bottom-6 -right-6 bg-zinc-900 border border-orange-500 rounded-2xl p-6 shadow-xl">
+                    <div class="flex items-center gap-3">
+                        <div class="w-4 h-4 bg-orange-500 rounded-full"></div>
+                        <div>
+                            <div class="text-sm font-medium">Frontend & Websigner</div>
+                            <div class="text-orange-400 text-lg font-semibold">JR | Jean Ribeiro</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="py-16 border-b border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-wrap justify-center gap-x-12 gap-y-6 text-zinc-400 text-sm font-medium">
+                <div class="flex items-center gap-2 hover:text-orange-400 transition-colors">Frontend</div>
+                <div class="flex items-center gap-2 hover:text-orange-400 transition-colors">Tailwind CSS</div>
+                <div class="flex items-center gap-2 hover:text-orange-400 transition-colors">Figma</div>
+                                <div class="flex items-center gap-2 hover:text-orange-400 transition-colors">API</div>
+                            <div class="flex items-center gap-2 hover:text-orange-400 transition-colors">React</div>
+                            <div class="flex items-center gap-2 hover:text-orange-400 transition-colors">Typescript</div>
+                                            <div class="flex items-center gap-2 hover:text-orange-400 transition-colors">SASS</div>
+                <div class="flex items-center gap-2 hover:text-orange-400 transition-colors">3+ Years in IT Support</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-24 bg-zinc-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-16">
+                <div class="md:col-span-5">
+                    <div class="sticky top-28">
+                        <span class="text-orange-500 text-sm tracking-widest">01 — SOBRE</span>
+                        <h2 class="text-5xl heading-font font-semibold mt-4 leading-tight">
+                            Mente de Programador.<br>
+                            <span class="text-orange-400">Olhar de Designer.</span>
+                        </h2>
+                    </div>
+                </div>
+                
+                <div class="md:col-span-7 space-y-8 text-lg text-zinc-300">
+                    <p>
+                  Desenvolvedor Front-End e Web Designer Freelancer. Ajudo empresas e profissionais a criarem sites modernos, responsivos e profissionais que transmitam credibilidade e proporcionem uma ótima experiência aos usuários.
+  </p>
+                    <p>
+                    Tenho experiência sólida com HTML, CSS, JavaScript, WordPress e Figma (design), além de 3 anos de atuação na área de TI.
+
+                    </p>
+                    <p>
+                    Meu foco é desenvolver páginas rápidas, intuitivas e alinhadas aos objetivos de cada cliente.</p>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-8">
+                        <div class="bg-zinc-900 p-6 rounded-2xl text-center">
+                            <div class="text-orange-400 text-2xl font-bold">01</div>
+                            <div class="text-sm mt-2">Descoberta</div>
+                        </div>
+                        <div class="bg-zinc-900 p-6 rounded-2xl text-center">
+                            <div class="text-orange-400 text-2xl font-bold">02</div>
+                            <div class="text-sm mt-2">Design</div>
+                        </div>
+                        <div class="bg-zinc-900 p-6 rounded-2xl text-center">
+                            <div class="text-orange-400 text-2xl font-bold">03</div>
+                            <div class="text-sm mt-2">Desenvolvimento</div>
+                        </div>
+                        <div class="bg-zinc-900 p-6 rounded-2xl text-center">
+                            <div class="text-orange-400 text-2xl font-bold">04</div>
+                            <div class="text-sm mt-2">Implantação</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-24 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <span class="text-orange-500 text-sm tracking-widest">02 — SKILLS</span>
+                    <h2 class="text-5xl heading-font font-semibold mt-3">Uma stack tecnológica moderna e focada.</h2>
+                </div>
+                <p class="max-w-xs text-zinc-400">Ferramentas que utilizo para desenvolver interfaces de nível profissional — escolhidas pela sua velocidade, durabilidade e prazer de usar.</div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Skill Card 1 -->
+                <div class="bg-zinc-950 p-8 rounded-3xl border border-zinc-800">
+                    <div class="flex items-center gap-4 mb-8">
+                        <i class="fab fa-react text-4xl text-cyan-400"></i>
+                        <div>
+                            <div class="font-semibold">React + Next.js</div>
+                            <div class="text-sm text-zinc-500">95%</div>
+                        </div>
+                    </div>
+                    <div class="h-1.5 bg-zinc-800 rounded-full overflow-hidden">
+                        <div class="progress-bar w-[95%]"></div>
+                    </div>
+                </div>
+                
+                <!-- Skill Card 2 -->
+                <div class="bg-zinc-950 p-8 rounded-3xl border border-zinc-800">
+                    <div class="flex items-center gap-4 mb-8">
+                        <i class="fas fa-code text-4xl text-blue-400"></i>
+                        <div>
+                            <div class="font-semibold">TypeScript</div>
+                            <div class="text-sm text-zinc-500">92%</div>
+                        </div>
+                    </div>
+                    <div class="h-1.5 bg-zinc-800 rounded-full overflow-hidden">
+                        <div class="progress-bar w-[92%]"></div>
+                    </div>
+                </div>
+                
+                <!-- Add more skill cards similarly -->
+                <div class="bg-zinc-950 p-8 rounded-3xl border border-zinc-800">
+                    <div class="flex items-center gap-4 mb-8">
+                        <i class="fas fa-paint-brush text-4xl text-orange-400"></i>
+                        <div>
+                            <div class="font-semibold">UI / UX Design</div>
+                            <div class="text-sm text-zinc-500">90%</div>
+                        </div>
+                    </div>
+                    <div class="h-1.5 bg-zinc-800 rounded-full overflow-hidden">
+                        <div class="progress-bar w-[90%]"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="work" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <span class="text-orange-500 text-sm tracking-widest">03 — TRABALHOS REALIZADOS</span>
+                    <h2 class="text-5xl heading-font font-semibold mt-3">Projetos Recentes.</h2>
+                </div>
+                <a href="#contact" class="text-orange-400 hover:underline flex items-center gap-2">Iniciar um projeto <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="group card-hover bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800">
+                    <div class="h-80 bg-zinc-800 relative">
+
+                        <img src="./src/img-sites/barber-site.png" alt="Barber" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                   </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-semibold text-xl">Barber</div>
+                                <div class="text-zinc-400 text-sm">Frontend landingpage</div>
+                            </div>
+                            <div class="flex gap-2">
+                                <span class="text-xs px-3 py-1 bg-zinc-800 rounded-full">Javascript</span>
+                                <span class="text-xs px-3 py-1 bg-zinc-800 rounded-full">Bootstrap</span>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-zinc-400 line-clamp-2">
+                            A barbershop landing page
+                            <div class="flex gap-4 mt-8">
+                            <a href="./src/img-sites/barber-site.png" target="_blank" class="flex-1 bg-orange-500 text-center py-4 rounded-2xl font-medium hover:bg-orange-600 transition">Visualizar</a>
+                            <a href="https://github.com/JeanRibeiro8/barber-site" target="_blank" class="flex-1 border border-zinc-700 text-center py-4 rounded-2xl font-medium hover:bg-zinc-800 transition">Código</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- More projects... (I'll add 3-4 total) -->
+                <!-- You can duplicate and change images/text -->
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="py-24 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-5xl heading-font font-semibold text-center mb-16">Feedback</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-zinc-950 p-8 rounded-3xl">
+ <img src="./src/img/client1.png" alt="client" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+
+                <div class="bg-zinc-950 p-8 rounded-3xl">
+ <img src="./src/img/client2.png" alt="client" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+
+                <div class="bg-zinc-950 p-8 rounded-3xl">
+ <img src="./src/img/client3.png" alt="client" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="bg-zinc-950 p-8 rounded-3xl">
+ <img src="./src/img/client4.png" alt="client" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+
+                <div class="bg-zinc-950 p-8 rounded-3xl">
+ <img src="./src/img/client5.png" alt="client" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-24 bg-zinc-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-20">
+                <div>
+                    <span class="text-orange-500 text-sm tracking-widest">05 — CONTATO</span>
+                    <h2 class="text-6xl heading-font font-semibold mt-6 leading-none">Tem um projeto em mente?</h2>
+                    <p class="mt-8 text-xl text-zinc-400">
+                        Conte-me tudo. Respondo a todas as mensagens em até 24 horas — geralmente com algumas perguntas e ideias para darmos início ao projeto.
+                    </p>
+                    
+                    <div class="mt-12 space-y-6">
+                        <div class="flex items-center gap-4">
+                            <i class="fas fa-envelope text-orange-400"></i>
+                            <div>jeanrsantos10@gmail.com</div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i class="fas fa-globe text-orange-400"></i>
+                            <div>Remote • Worldwide</div>
+                        </div>
+
+                                                <div class="flex items-center gap-4">
+                            <i class="fas fa-phone text-orange-400"></i>
+                            <div>(12) 99137-1731</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="space-y-6">
+                    <div class="grid grid-cols-2 gap-6">
+                        <input type="text" placeholder="Nome" class="bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-5 focus:outline-none focus:border-orange-500">
+                        <input type="email" placeholder="Email" class="bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-5 focus:outline-none focus:border-orange-500">
+                    </div>
+                    <input type="text" placeholder="Orçamento" class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-5 focus:outline-none focus:border-orange-500">
+                    <textarea placeholder="Me fale sobre o projeto..." rows="6" class="w-full bg-zinc-900 border border-zinc-700 rounded-3xl px-6 py-5 focus:outline-none focus:border-orange-500"></textarea>
+                    
+                    <button type="submit" 
+                            class="w-full bg-gradient-to-r from-orange-500 to-orange-600 py-6 rounded-3xl font-semibold text-lg hover:scale-[1.02] transition-all">
+                        Enviar Mensagem →
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- ADD API TO SEND MENSSAGE AND WHATSAPP AND CELLPHONEVERSION-->
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-12 border-t border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6 text-center text-zinc-500 text-sm">
+            © 2026 created by JR.
+        </div>
+    </footer>
+
+    <script>
+        // Simple tailwind script already included via CDN
+        // Add smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>

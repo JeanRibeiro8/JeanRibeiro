@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jean Ribeiro - Portfolio</title>
+  <link rel="icon" href="./src/img/favicon.png">
+
+  <!--import-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!--BOOTSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!--STYLE-->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- TRY MAKE THE FUNCTION OF DIRECT URL FOR JAVASCRIPT -------------->
+  <!-- NAVBAR -->
+ <header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-1 fixed-top">
+
+    <div class="container">
+
+      <!-- LOGO -->
+      <a class="navbar-brand" href="#">
+
+        <img src="./src/img/logo.png" width="50">
+
+      </a>
+
+      <!-- MOBILE BUTTON -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu">
+
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+
+      <!-- MENU -->
+      <div class="collapse navbar-collapse" id="menu">
+
+        <ul class="navbar-nav ms-auto gap-lg-4 text-center">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#hero">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+</header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1>Jean Ribeiro</h1>
+      <h2 style="color: #494949;">Frontend developer</h2>
+  
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="about-left">
+      <h2>ABOUT</h2>
+      <p><strong style="color: #00c3ff;">Email:</strong> jeanrsantos10@gmail.com</p>
+      <p><strong style="color: #00c3ff;">Phone:</strong> +55 12 99137 1731</p>
+    </div>
+
+    <div class="about-right">
+      <p>
+        Fullstack Developer I have basic knowledge since 2021
+        in front-end languages and frameworks, PHP, SQL,
+        Javascript, Wordpress, Figma. I really enjoy creating
+        easy and intuitive websites to provide the best user
+        experience.
+      </p>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="education"><br><br>
+    <h2>EDUCATION</h2>
+
+    <div class="edu-item">
+      <img src="src/img/etec.png">
+      <h3>ETEC - Escola Técnica Estadual de São Paulo</h3>
+      <span>Feb 2021 - Dec 2023</span>
+      <p>
+        Computer technician specializing in internet development; Software, Hardware,
+        Programming Logic, Information Security, Web Content Management,
+        Databases, Mobile Application Development, UI/UX, JavaScript, PHP, SQL,
+        Frontend, WordPress.
+      </p>
+    </div>
+
+    <div class="edu-item">
+      <img src="src/img/uninter.png">
+      <h3>Uninter</h3>
+      <span>Feb 2026</span>
+      <p>Systems analysis and development, Javascript, Responsive web design</p>
+    </div>
+
+    
+  </section>
+
+
+<!-- PROJECTS -->
+<section id="projects" class="projects-section py-5">
+
+  <div class="container">
+
+    <!-- TITLE -->
+    <div class="text-center mb-5">
+
+      <h2 class="fw-bold display-5 text-white">
+        My Projects
+      </h2>
+
+    </div>
+
+    <!-- GRID -->
+    <div class="row g-4">
+
+      <!-- PROJECT 1 -->
+      <div class="col-md-6 col-lg-4">
+
+        <a
+          href="https://github.com/JeanRibeiro8/barber-site"
+          target="_blank"
+          class="project-card">
+
+          <img
+            src="./src/img-sites/barber-site.png"
+            alt="Barber site">
+
+          <div class="project-overlay">
+
+            <h3>
+              Barber site
+            </h3>
+
+            <p>
+              A barbershop landing page
+            </p>
+
+          </div>
+
+        </a>
+
+      </div>
+
+      <!-- PROJECT 2 -->
+      <div class="col-md-6 col-lg-4">
+
+        <a
+          href="https://github.com/JeanRibeiro8/gym-site"
+          target="_blank"
+          class="project-card">
+
+          <img
+            src="./src/img-sites/gym-site.png"
+            alt="Gym Site">
+
+          <div class="project-overlay">
+
+            <h3>
+              Gym Site
+            </h3>
+
+            <p>
+              A gym landing page
+            </p>
+
+          </div>
+
+        </a>
+
+      </div>
+
+      <!-- PROJECT 3 -->
+      <div class="col-md-6 col-lg-4">
+
+        <a
+          href="https://jeanribeiro8.github.io/TecSchool/"
+          target="_blank"
+          class="project-card">
+
+          <img
+            src="./src/img-sites/tech-site.png"
+            alt="Techschool Site">
+
+          <div class="project-overlay">
+
+            <h3>
+              Techschool Site
+            </h3>
+
+            <p>
+              A school institutional website about technology.
+            </p>
+
+          </div>
+
+        </a>
+
+      </div>
+
+
+       <!-- PROJECT 4 -->
+      <div class="col-md-6 col-lg-4">
+
+        <a
+          href="https://github.com/JeanRibeiro8/javascript"
+          target="_blank"
+          class="project-card">
+
+          <img
+            src="./src/img-sites/javascript.png"
+            alt="Javascript">
+
+          <div class="project-overlay">
+
+            <h3>
+              Javascript Projects
+            </h3>
+
+            <p>
+              Calculator, Timer, To-do list, Weather-app
+            </p>
+
+          </div>
+
+        </a>
+
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+
+    <form class="contact-form" action="https://formspree.io/f/xreoekev" method="POST">
+  <input type="text" name="name" placeholder="Your name" required>
+  <input type="email" name="email" placeholder="Your email" required>
+  <textarea name="message" placeholder="Your message" rows="5" required></textarea>
+  <button type="submit">Send</button>
+</form>
+
+    <div class="social">
+  <a href="https://www.instagram.com/jr_web8/" target="_blank">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+
+  <a href="https://github.com/JeanRibeiro8?tab=repositories" target="_blank">
+    <i class="fa-brands fa-github"></i>
+  </a>
+
+  <a href="https://www.linkedin.com/in/jean-ribeiro-9a3792267/" target="_blank">
+    <i class="fa-brands fa-linkedin"></i>
+  </a>
+</div>
+
+     <p><strong style="color: #00c3ff;">Email:</strong> jeanrsantos10@gmail.com</p>
+      <p><strong style="color: #00c3ff;">Phone:</strong> +55 12 99137 1731</p>
+ 
+  </section>
+  <!--emailJS-->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <!--SCRIPT-->
+  <script src="/src/script/script.js"></script>
+</body>
+</html>
