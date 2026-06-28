@@ -36,3 +36,21 @@
             height: 4px;
             background: linear-gradient(to right, #FF6200, #FF9F4D);
             transition: width 1.5s ease-out;}
+
+
+            .social span {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.social i{
+font-size: 40px;
+margin: 20px;
+}
+
+
+.social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
