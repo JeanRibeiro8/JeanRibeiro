@@ -1,132 +1,5 @@
-   // Simple tailwind script already included via CDN
-        // Add smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                if (this.getAttribute('href') !== '#') {
-                    e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-
-//FILTER
-
-    const filterSelect = document.getElementById('projectFilter');
-    const projectCards = document.querySelectorAll('.project-card');
-
-    filterSelect.addEventListener('change', function () {
-        const selected = this.value;
-
-        projectCards.forEach(card => {
-            const category = card.getAttribute('data-category');
-
-            if (selected === 'all' || category === selected) {
-                card.style.display = 'block';
-            
-                card.style.opacity = '0';
-                setTimeout(() => {
-                    card.style.opacity = '1';
-                    card.style.transition = 'opacity 0.3s ease';
-                }, 50);
-            } else {
-                card.style.display = 'none';
-            }
-        });
-    });
-
-  gsap.registerPlugin(ScrollTrigger);
-
-  // ======================
-  // HERO
-  // ======================
-  gsap.from(".hero-bg .space-y-8 > *", {
-    opacity: 0,
-    y: 40,
-    duration: 0.9,
-    stagger: 0.15,
-    ease: "power3.out",
-    delay: 0.2
-  });
-
-  gsap.from(".hero-bg .relative", {
-    opacity: 0,
-    x: 60,
-    duration: 1.1,
-    ease: "power3.out",
-    delay: 0.4
-  });
-
-  // ======================
-  // ABOUT
-  // ======================
-  gsap.from("#about .md\\:col-span-5", {
-    opacity: 0,
-    x: -40,
-    duration: 1,
-    ease: "power3.out",
-    scrollTrigger: {
-      trigger: "#about",
-      start: "top 80%"
-    }
-  });
-
-  gsap.from("#about .md\\:col-span-7 > *", {
-    opacity: 0,
-    y: 30,
-    duration: 0.8,
-    stagger: 0.1,
-    ease: "power3.out",
-    scrollTrigger: {
-      trigger: "#about",
-      start: "top 75%"
-    }
-  });
-
-  // ======================
-  // SKILLS
-  // ======================
-  gsap.from("#skills .grid > div", {
-    opacity: 0,
-    y: 40,
-    duration: 0.8,
-    stagger: 0.12,
-    ease: "power3.out",
-    scrollTrigger: {
-      trigger: "#skills",
-      start: "top 80%"
-    }
-  });
-
-
-  // ======================
-  // CONTACT
-  // ======================
-  gsap.from("#contact .grid > div:first-child", {
-    opacity: 0,
-    x: -40,
-    duration: 1,
-    ease: "power3.out",
-    scrollTrigger: {
-      trigger: "#contact",
-      start: "top 80%"
-    }
-  });
-
-  gsap.from("#contact form", {
-    opacity: 0,
-    x: 40,
-    duration: 1,
-    ease: "power3.out",
-    scrollTrigger: {
-      trigger: "#contact",
-      start: "top 80%"
-    }
-  });
-
-
+// As animações (GSAP) ficam no bloco inline do index.html.
+// O scroll suave é feito pelo CSS (scroll-behavior: smooth em style.css).
 
 // ===== Menu mobile =====
 const menuBtn = document.getElementById('menuBtn'), mobileMenu = document.getElementById('mobileMenu');
@@ -149,14 +22,17 @@ const EN = {
   "Projetos no portfólio":"Portfolio projects","3 anos":"3 yrs","Formação técnica em TI":"Technical IT training","Lorena, Brasil":"Lorena, Brazil",
   "Desenvolvedor Front-End Júnior":"Junior Front-End Developer",
   "Projetos que fiz para praticar e demonstrar minhas habilidades. Cada card mostra as tecnologias usadas, com o site publicado e o código no GitHub quando disponíveis.":"Projects I built to practice and showcase my skills. Each card lists the technologies used, with the live site and the code on GitHub when available.",
-  "Dashboard de Operações Empresariais":"Enterprise Operations Dashboard","Dashboard de Analytics de Engenharia":"Engineering Analytics Dashboard","Aplicação de Vagas":"Job Board Application","Projeto de Performance em React":"React Performance Project","Ferramenta de Análise Estática de Código":"Static Code Analysis Tool",
+  "Dashboard de Operações Empresariais":"Enterprise Operations Dashboard",
+  "Dashboard de Analytics de Engenharia":"Engineering Analytics Dashboard",
+  "Aplicação de Vagas":"Job Board Application",
+  "Projeto de Performance em React":"React Performance Project",
+  "Ferramenta de Análise Estática de Código":"Static Code Analysis Tool",
   "Dashboard empresarial para gerenciar usuários, equipes, projetos, tarefas, relatórios, logs de auditoria e configurações do sistema.":"Enterprise dashboard for managing users, teams, projects, tasks, reports, audit logs, and system settings.",
   "Dashboard de analytics de engenharia para monitorar repositórios, pull requests, code reviews, atividade da equipe, riscos e recomendações no estilo de IA.":"Engineering analytics dashboard for monitoring repositories, pull requests, code reviews, team activity, risks, and AI-style recommendations.",
   "Job board responsivo com busca, filtros, paginação, estados de carregamento, erro e resultados vazios, integrado a uma API REST externa.":"Responsive job board with search, filters, pagination, loading, error, and empty states, integrated with an external REST API.",
   "Projeto em React e TypeScript voltado ao estudo de performance, comportamento de componentes e otimização do front-end.":"React and TypeScript project focused on performance, component behavior, and frontend optimization.",
   "Ferramenta de análise estática para JavaScript e TypeScript usando AST, métricas de código, detecção de problemas, sugestões e análise assistida por IA.":"Static analysis tool for JavaScript and TypeScript using AST parsing, code metrics, issue detection, suggestions, and AI-assisted analysis.",
-  "Ver site":"Live site","GitHub":"GitHub",
-  "Visualizar":"Preview","Ver site":"Ver site","Código":"Code",
+  "Ver site":"Live site","Código":"Code",
   "Tecnologias que uso nos projetos e as que estou aprendendo agora.":"Technologies I use in my projects and the ones I'm learning right now.",
   "Ferramentas e práticas":"Tools and practices","Design responsivo":"Responsive design","APIs REST":"REST APIs",
   "CMS e back-end básico":"CMS and basic back-end","Estudando agora":"Currently studying",
@@ -173,16 +49,11 @@ const EN = {
   "Vamos conversar?":"Let's talk?",
   "Está recrutando ou quer saber mais sobre algum projeto? Envie uma mensagem. Respondo em até 24 horas.":"Are you hiring or want to know more about a project? Send me a message. I reply within 24 hours.",
   "Lorena, SP, Brasil":"Lorena, SP, Brazil","Enviar mensagem":"Send message",
-  /* atributos */
+  /* atributos (placeholder, aria-label, alt) */
   "Nome":"Name","E-mail":"Email","Empresa (opcional)":"Company (optional)","Escreva sua mensagem...":"Write your message...",
   "Empresa":"Company","Mensagem":"Message","Abrir menu":"Open menu","Principal":"Main","Tecnologias":"Technologies",
   "Logo JR Desenvolvedor Front-End":"JR Front-End Developer logo",
-  "OpsHub":"OpsHub","DevInsight":"DevInsight","Jobly":"Jobly","React Performance":"React Performance","CodeLens":"CodeLens",
-  "Jean Ribeiro, desenvolvedor front-end júnior":"Jean Ribeiro, junior front-end developer",
-  "Landing page da barbearia":"Barbershop landing page","Landing page da academia":"Gym landing page",
-  "Site da Techschool":"Techschool website","Site da Nexus Consulting":"Nexus Consulting website",
-  "Site da clínica odontológica BrightSmile":"BrightSmile dental clinic website",
-  "Site da agência Blaze Agencia":"Blaze Agencia marketing website","E-commerce da Petalora":"Petalora e-commerce website"
+  "Jean Ribeiro, desenvolvedor front-end júnior":"Jean Ribeiro, junior front-end developer"
 };
 const META = {
   pt: { title: document.title, desc: document.querySelector('meta[name="description"]').content },
@@ -252,4 +123,3 @@ contactForm.addEventListener('submit', async e => {
     if (r.ok) { contactForm.reset(); setStatus('ok', 'text-green-400'); } else throw new Error();
   } catch (err) { setStatus('err', 'text-red-400'); }
 });
-
