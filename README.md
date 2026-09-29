@@ -199,24 +199,6 @@ Currently improving my English communication skills with a focus on professional
 
 ---
 
-# 📊 GitHub Activity
-
-<p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api?username=JeanRibeiro8&show_icons=true&theme=tokyonight&hide_border=true"
-    height="170"
-    alt="Jean Ribeiro GitHub statistics"
-  />
-
-  <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=JeanRibeiro8&layout=compact&theme=tokyonight&hide_border=true"
-    height="170"
-    alt="Jean Ribeiro most used languages"
-  />
-</p>
-
----
-
 # 🌎 Connect With Me
 
 <div align="left">

@@ -1,736 +1,361 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <!-- SEO -->
-<meta
-name="description"
-content="Freelance Front-End Developer and Web Designer creating modern, responsive, high-performance websites. Website redesign, landing pages, website reviews, SEO improvements and performance optimization."
->
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jean Ribeiro | Desenvolvedor Front-End Júnior</title>
+<meta name="description" content="Desenvolvedor Front-End júnior em Lorena (SP). Interfaces responsivas com HTML, CSS, JavaScript e React. Veja meus projetos, competências e entre em contato.">
+<!-- Depois de definir a URL final deste site, adicione: <link rel="canonical" href="https://SEU-DOMINIO/"> -->
+<link rel="icon" href="./src/img/favic.png">
+<link rel="stylesheet" href="./src/style/style.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Person",
-
-  "name":"Jean Ribeiro",
-
-  "jobTitle":"Front-End Developer",
-
-  "url":"https://jeanribeiro8.github.io/JeanRibeiro/",
-
-  "image":"https://jeanribeiro8.github.io/JeanRibeiro/profile.webp",
-
-  "sameAs":[
-    "https://github.com/jeanribeiro8",
-    "https://www.linkedin.com/in/jean-ribeiro-9a3792267/"
-  ],
-
-  "knowsAbout":[
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "React",
-    "WordPress",
-    "Web Design",
-    "Responsive Design",
-    "SEO",
-    "UI Design",
-    "UX Design"
-  ]
-}
+{"@context":"https://schema.org","@type":"Person","name":"Jean Ribeiro","jobTitle":"Desenvolvedor Front-End Júnior","address":{"@type":"PostalAddress","addressLocality":"Lorena","addressRegion":"SP","addressCountry":"BR"},"sameAs":["https://github.com/JeanRibeiro8","https://www.linkedin.com/in/jean-ribeiro-9a3792267/"],"knowsAbout":["HTML","CSS","JavaScript","React","Tailwind CSS","Figma","Design Responsivo"]}
 </script>
-
-    <!-- SEO -->
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jean Ribeiro | Freelance Front-End Developer & Web Designer</title>
-    <link rel="canonical" href="https://jeanribeiro8.github.io/JeanRibeiro/">
-     <link rel="icon" href="./src/img/favic.png">
-       <link rel="stylesheet" href="./src/style/style.css">
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <!-- SCHEMA -->
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Jean Ribeiro",
-  "url": "https://jeanribeiro8.github.io/JeanRibeiro/",
-  "description": "Freelance Front-End Developer and Web Designer.",
-  "areaServed": "Worldwide",
-  "founder": "Jean Ribeiro",
-  "priceRange": "$$",
-  "sameAs": [
-    "https://github.com/jeanribeiro8",
-    "https://www.linkedin.com/in/jean-ribeiro-9a3792267/"
-  ]
-}
-</script>
-
+<script>try{if(localStorage.getItem('lang')==='en'){document.documentElement.classList.add('i18n-wait');setTimeout(function(){document.documentElement.classList.remove('i18n-wait')},1500)}}catch(e){}</script>
 </head>
 
 <body class="tail-container bg-zinc-950 text-white overflow-x-hidden">
-    <!-- NAV -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800">
-        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-            <div class="flex items-center gap-2">
-                <div class="w-8 h-8 rounded-full flex items-center justify-center text-xl font-bold">
-                    <img src="./src/img/logo.webp"
-                    alt="JR Front-End Developer logo">
-                </div>
-            </div>
-            
-            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-                <a href="#work" class="hover:text-orange-400 transition-colors">Work</a>
-                <a href="#service" class="hover:text-orange-400 transition-colors">Services</a>
-                <a href="#about" class="hover:text-orange-400 transition-colors">About</a>
-                <a href="#skills" class="hover:text-orange-400 transition-colors">Skills</a>
-               <!-- <a href="#testimonials" class="hover:text-orange-400 transition-colors">Feedback</a>
-             -->   <a href="#contact" class="hover:text-orange-400 transition-colors">Contact</a>
-            </div>
-            
-            <a href="#contact" 
-               class="bg-orange-700 hover:bg-orange-600 px-6 py-3 rounded-full text-sm font-semibold transition-all flex items-center gap-2">
-                Let's Talk 
-                <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </nav>
 
-    <!-- HERO -->
-    <section class="hero-bg min-h-screen pt-24 flex items-center">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-            <div class="space-y-8">
-                <div class="inline-flex items-center gap-2 bg-zinc-900 border border-gray-500/30 text-white-400 text-sm px-4 py-2 rounded-full">
-                    <div class="w-2 h-2 bg-orange-600 rounded-full animate-pulse"></div>
-                    Available for new projects – 2026
-                </div>
-                <!--1.CENTER-->
-                <h1 class="text-4xl md:text-5xl font-bold leading-tight heading-font">
-                      I turn ideas into 
-          
-                    <span class="text-orange-500">fast websites,</span>
-                     professional and responsive.
-                </h1>
-                
-                <p class="text-3x1 text-zinc-400 max-w-lg">
-                  I'm a freelance Web Designer and Frontend Developer. I build modern, responsive and optimized landing pages and websites that deliver a great user experience. I work with HTML, CSS, JavaScript and Figma, blending design and technology to generate real results.
- </p>
-                
-                <div class="flex flex-wrap gap-4"> <!--2.CENTER-->
-                    <a href="#work" 
-                       class="bg-orange-500 hover:bg-orange-600 px-8 py-4 rounded-full font-semibold text-lg inline-flex items-center gap-3 transition-all">
-                        See my work
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    <a href="#contact" 
-                       class="border border-zinc-700 hover:border-zinc-400 px-8 py-4 rounded-full font-semibold text-lg transition-all">
-                        Get in touch
-                    </a>
-                </div>
+<!-- NAV -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800" aria-label="Principal">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="#top" class="w-10 h-10 block"><img src="./src/img/logo.webp" alt="Logo JR Desenvolvedor Front-End" width="40" height="40"></a>
 
-                <!-- Stats --> 
-                <div class="flex gap-12 pt-8">
-                    <div class="mb-8">
-                        <div class="text-4xl font-semibold text-orange-400">9</div>
-                        <div class="text-sm text-zinc-500">PROJECTS COMPLETED</div>
-                    </div>
-                   
-                    <div>
-                        <div class="text-4xl font-semibold text-orange-400">7</div>
-                        <div class="text-sm text-zinc-500">TECHNOLOGIES</div>
-                    </div>
-
-                    
-                    <div>
-                        <div class="text-4xl font-semibold text-orange-400">100%</div>
-                        <div class="text-sm text-zinc-500">CODE</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Photo -->
-            <div class="relative">
-                <div class="aspect-square bg-zinc-900 rounded-3xl overflow-hidden border border-orange-500/20 shadow-2xl">
-                    <img src="./src/img/profile.webp"
-                                  alt="JR Front-End Developer"
-                         class="w-full h-full object-cover">
-                </div>
-                <div class="absolute -bottom-6 -right-6 bg-zinc-900 border border-orange-500 rounded-2xl p-6 shadow-xl">
-                    <div class="flex items-center gap-3">
-                        <div class="w-4 h-4 bg-orange-500 rounded-full"></div>
-                        <div>
-                            <div class="text-sm font-medium">Frontend & Web Designer</div>
-                            <div class="text-orange-400 text-lg font-semibold">JR | Jean Ribeiro</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TECH STACK -->
-    <section class="py-16 border-b border-zinc-800">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="flex flex-wrap justify-center gap-x-12 gap-y-6 text-zinc-400 text-sm font-medium">
-                <div class="flex items-center gap-2 hover:text-orange-400 transition-colors">HTML</div>
-                          <div class="flex items-center gap-2 hover:text-orange-400 transition-colors">CSS</div>
-                                    <div class="flex items-center gap-2 hover:text-orange-400 transition-colors">JavaScript</div>
-                <div class="flex items-center gap-2 hover:text-orange-400 transition-colors">Tailwind CSS</div>
-                                                            <div class="flex items-center gap-2 hover:text-orange-400 transition-colors">SASS</div>
-                <div class="flex items-center gap-2 hover:text-orange-400 transition-colors">Wordpress</div>
-                         <div class="flex items-center gap-2 hover:text-orange-400 transition-colors">Elementor</div>
-                                <div class="flex items-center gap-2 hover:text-orange-400 transition-colors">API</div>
-                            <div class="flex items-center gap-2 hover:text-orange-400 transition-colors">React</div>
-                            <div class="flex items-center gap-2 hover:text-orange-400 transition-colors">Bootstrap</div>
-                                          <div class="flex items-center gap-2 hover:text-orange-400 transition-colors">SQL</div>
-                                                        <div class="flex items-center gap-2 hover:text-orange-400 transition-colors">PHP</div>
-                <div class="flex items-center gap-2 hover:text-orange-400 transition-colors">Figma</div>
-                                            <div class="flex items-center gap-2 hover:text-orange-400 transition-colors">Git/GitHub</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="py-24 bg-zinc-950">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid md:grid-cols-12 gap-16">
-                <div class="md:col-span-5">
-                    <div class="sticky top-28">
-                        <span class="text-orange-500 text-sm tracking-widest">01 — ABOUT</span>
-                        <h2 class="text-4xl md:text-5xls heading-font font-semibold mt-4 leading-tight">
-                            Developer's Mind.<br>
-                            <span class="text-orange-400">Designer's Eye.</span>
-                        </h2>
-                    </div>
-                </div>
-                
-                <div class="md:col-span-7 space-y-8 text-lg text-zinc-300">
-                    <p class="text-3x1 text-zinc-400 max-w-lg">
-                  Freelance Front-End Developer and Web Designer. I help businesses and professionals build modern, responsive and professional websites that convey credibility and deliver a great user experience.
-  </p>
-                     <p class="text-3x1 text-zinc-400 max-w-lg">
-                    I have solid experience with HTML, CSS, JavaScript, WordPress and Figma (design), plus 3 years working in the IT field.
-
-                    </p>
-                     <p class="text-3x1 text-zinc-400 max-w-lg">
-                    My focus is building fast, intuitive pages aligned with each client's goals.</p>
- <p class="text-3x1 text-zinc-400 max-w-lg">
-                  Already have a website? I'll identify improvements in design, performance and user experience. Starting from scratch? I'll help you plan the best solution for your business.
-                  </p>
-                    
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-8">
-                        <div class="bg-zinc-900 p-6 rounded-2xl text-center">
-                            <div class="text-orange-400 text-2xl font-bold">01</div>
-                            <div class="text-sm mt-2">Discovery</div>
-                        </div>
-                        <div class="bg-zinc-900 p-6 rounded-2xl text-center">
-                            <div class="text-orange-400 text-2xl font-bold">02</div>
-                            <div class="text-sm mt-2">Design</div>
-                        </div>
-                        <div class="bg-zinc-900 p-6 rounded-2xl text-center">
-                            <div class="text-orange-400 text-2xl font-bold">03</div>
-                            <div class="text-sm mt-2">Development</div>
-                        </div>
-                        <div class="bg-zinc-900 p-6 rounded-2xl text-center">
-                            <div class="text-orange-400 text-2xl font-bold">04</div>
-                            <div class="text-sm mt-2">Deployment</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="py-24 bg-zinc-900">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="flex justify-between items-end mb-12">
-                <div>
-                    <span class="text-orange-500 text-sm tracking-widest">02 — SKILLS</span>
-                    <h2 class="text-4xl md:text-5xl heading-font font-semibold mt-3">A modern, focused tech stack.</h2>
-                </div>
-                <p class="max-w-xs text-zinc-400 ml-6">Tools I use to build professional-grade interfaces — chosen for their speed, reliability and enjoyable developer experience.</div>
-            
-            <div class="grid md:grid-cols-3 gap-6">
-                <!-- Skill Card 1 -->
-                <div class="bg-zinc-950 p-8 rounded-3xl border border-zinc-800">
-                    <div class="flex items-center gap-4 mb-8">
-                        <i class="fab fa-css3 text-4xl text-cyan-400"></i>
-                        <div>
-                            <div class="font-semibold">CSS + Tailwind CSS</div>
-                            <div class="text-sm text-zinc-500">70%</div>
-                        </div>
-                    </div>
-                    <div class="h-1.5 bg-zinc-800 rounded-full overflow-hidden">
-                        <div class="progress-bar w-[70%]"></div>
-                    </div>
-                </div>
-                
-                <!-- Skill Card 2 -->
-                <div class="bg-zinc-950 p-8 rounded-3xl border border-zinc-800">
-                    <div class="flex items-center gap-4 mb-8">
-                        <i class="fas fa-code text-4xl text-blue-400"></i>
-                        <div>
-                            <div class="font-semibold">JavaScript</div>
-                            <div class="text-sm text-zinc-500">70%</div>
-                        </div>
-                    </div>
-                    <div class="h-1.5 bg-zinc-800 rounded-full overflow-hidden">
-                        <div class="progress-bar w-[70%]"></div>
-                    </div>
-                </div>
-                
-                <!-- Skill Card 3 -->
-                <div class="bg-zinc-950 p-8 rounded-3xl border border-zinc-800">
-                    <div class="flex items-center gap-4 mb-8">
-                        <i class="fas fa-paint-brush text-4xl text-orange-400"></i>
-                        <div>
-                            <div class="font-semibold">UI / UX Design</div>
-                            <div class="text-sm text-zinc-500">80%</div>
-                        </div>
-                    </div>
-                    <div class="h-1.5 bg-zinc-800 rounded-full overflow-hidden">
-                        <div class="progress-bar w-[80%]"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-<!-- PROJECTS -->
-<section id="work" class="py-24">
-    <div class="max-w-7xl mx-auto px-6">
-
-        <!-- Header + Filter -->
-        <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12">
-            <div>
-                <span class="text-orange-500 text-sm tracking-widest">03 — COMPLETED WORK</span>
-                <h2 class="text-4xl md:text-5xl heading-font font-semibold mt-3">Recent Projects.</h2>
-            </div>
-
-            <div class="flex items-center gap-4">
-                <a href="#contact" class="text-orange-400 hover:underline flex items-center gap-2 whitespace-nowrap">
-                    Start a project <i class="fas fa-arrow-right"></i>
-                </a>
-
-                <!-- SELECT FILTER -->
-                <select id="projectFilter" 
-                        class="bg-zinc-900 w-52
-                        border border-zinc-700 text-white rounded-2xl px-5 py-3 outline-none focus:border-orange-500 transition cursor-pointer">
-                     <option value="all">All</option>
-        <option value="simples">Simple Website</option>
-        <option value="profissional">Professional Website</option>
-        <option value="premium">Premium Website</option>
-                </select>
-            </div>
-        </div>
-
-        <!-- PROJECTS GRID -->
-        <div id="projectsGrid" class="grid md:grid-cols-2 gap-8">
-
-            <!-- ==================== SIMPLE WEBSITES ==================== -->
-
-            <!-- PROJECT 1 - Barber -->
-            <div class="project-card group card-hover bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800" data-category="simples">
-                <div class="h-80 bg-zinc-800 relative">
-                    <img src="./src/img-sites/barber-site.png" alt="Barber" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                </div>
-                <div class="p-8">
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <div class="font-semibold text-xl">Barber</div>
-                            <div class="text-zinc-400 text-sm">Frontend landing page</div>
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-xs px-3 py-1 bg-zinc-800 rounded-full">Javascript</span>
-                            <span class="text-xs px-3 py-1 bg-zinc-800 rounded-full">Bootstrap</span>
-                        </div>
-                    </div>
-                    <p class="mt-4 text-zinc-400 line-clamp-2">A barbershop landing page</p>
-                    <div class="flex gap-4 mt-8">
-                        <a href="./src/img-sites/barber-site.png" target="_blank" class="flex-1 bg-orange-500 text-center py-4 rounded-2xl font-medium hover:bg-orange-600 transition">View</a>
-                        <a href="https://github.com/JeanRibeiro8/barber-site" target="_blank" class="flex-1 border border-zinc-700 text-center py-4 rounded-2xl font-medium hover:bg-zinc-800 transition">Code</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PROJECT 2 - Gym -->
-            <div class="project-card group card-hover bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800" data-category="simples">
-                <div class="h-80 bg-zinc-800 relative">
-                    <img src="./src/img-sites/gym-site.png" alt="Gym" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                </div>
-                <div class="p-8">
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <div class="font-semibold text-xl">Gym</div>
-                            <div class="text-zinc-400 text-sm">Frontend landing page</div>
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-xs px-3 py-1 bg-zinc-800 rounded-full">Javascript</span>
-                            <span class="text-xs px-3 py-1 bg-zinc-800 rounded-full">Bootstrap</span>
-                        </div>
-                    </div>
-                    <p class="mt-4 text-zinc-400 line-clamp-2">A gym landing page</p>
-                    <div class="flex gap-4 mt-8">
-                        <a href="https://jeanribeiro8.github.io/gym-site/" target="_blank" class="flex-1 bg-orange-500 text-center py-4 rounded-2xl font-medium hover:bg-orange-600 transition">View</a>
-                        <a href="https://github.com/JeanRibeiro8/gym-site" target="_blank" class="flex-1 border border-zinc-700 text-center py-4 rounded-2xl font-medium hover:bg-zinc-800 transition">Code</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PROJECT 3 - Techschool -->
-            <div class="project-card group card-hover bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800" data-category="simples">
-                <div class="h-80 bg-zinc-800 relative">
-                    <img src="./src/img-sites/tech-site.png" alt="Business" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                </div>
-                <div class="p-8">
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <div class="font-semibold text-xl">Techschool</div>
-                            <div class="text-zinc-400 text-sm">Frontend landing page</div>
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-xs px-3 py-1 bg-zinc-800 rounded-full">Javascript</span>
-                            <span class="text-xs px-3 py-1 bg-zinc-800 rounded-full">Bootstrap</span>
-                        </div>
-                    </div>
-                    <p class="mt-4 text-zinc-400 line-clamp-2">A school institutional website about technology.</p>
-                    <div class="flex gap-4 mt-8">
-                        <a href="https://jeanribeiro8.github.io/TecSchool/" target="_blank" class="flex-1 bg-orange-500 text-center py-4 rounded-2xl font-medium hover:bg-orange-600 transition">View</a>
-                        <a href="https://github.com/JeanRibeiro8/TecSchool" target="_blank" class="flex-1 border border-zinc-700 text-center py-4 rounded-2xl font-medium hover:bg-zinc-800 transition">Code</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ==================== PROFESSIONAL WEBSITES ==================== -->
-
-            <!-- PROJECT 4 - Nexus Consulting -->
-            <div class="project-card group card-hover bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800" data-category="profissional">
-                <div class="h-80 bg-zinc-800 relative">
-                    <img src="./src/img-sites/1.consult.png" alt="Consult" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                </div>
-                <div class="p-8">
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <div class="font-semibold text-xl">Nexus Consulting</div>
-                            <div class="text-zinc-400 text-sm">Web design landing page</div>
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-xs px-3 py-1 bg-zinc-800 rounded-full">Javascript</span>
-                            <span class="text-xs px-3 py-1 bg-zinc-800 rounded-full">Tailwind css</span>
-                        </div>
-                    </div>
-                    <p class="mt-4 text-zinc-400 line-clamp-2">Institutional website for Nexus Consulting.</p>
-                    <div class="flex gap-4 mt-8">
-                        <a href="https://nexusconsultin.netlify.app/" target="_blank" class="flex-1 bg-orange-500 text-center py-4 rounded-2xl font-medium hover:bg-orange-600 transition">View</a>
-                        <a href="https://github.com/JeanRibeiro8/nexus-consulting" target="_blank" class="flex-1 border border-zinc-700 text-center py-4 rounded-2xl font-medium hover:bg-zinc-800 transition">Code</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PROJECT 5 - BrightSmile -->
-            <div class="project-card group card-hover bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800" data-category="profissional">
-                <div class="h-80 bg-zinc-800 relative">
-                    <img src="./src/img-sites/1.dent.png" alt="Dentist" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                </div>
-                <div class="p-8">
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <div class="font-semibold text-xl">BrightSmile</div>
-                            <div class="text-zinc-400 text-sm">Web design landing page</div>
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-xs px-3 py-1 bg-zinc-800 rounded-full">Javascript</span>
-                            <span class="text-xs px-3 py-1 bg-zinc-800 rounded-full">Tailwind css</span>
-                        </div>
-                    </div>
-                    <p class="mt-4 text-zinc-400 line-clamp-2">Institutional website for BrightSmile.</p>
-                    <div class="flex gap-4 mt-8">
-                        <a href="https://brightsmlle.netlify.app/" target="_blank" class="flex-1 bg-orange-500 text-center py-4 rounded-2xl font-medium hover:bg-orange-600 transition">View</a>
-                        <a href="https://github.com/JeanRibeiro8/brightsmile-site" target="_blank" class="flex-1 border border-zinc-700 text-center py-4 rounded-2xl font-medium hover:bg-zinc-800 transition">Code</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PROJECT 6 - Blaze Agencia -->
-            <div class="project-card group card-hover bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800" data-category="profissional">
-                <div class="h-80 bg-zinc-800 relative">
-                    <img src="./src/img-sites/marketing.png" alt="Marketing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                </div>
-                <div class="p-8">
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <div class="font-semibold text-xl">Blaze Agencia</div>
-                            <div class="text-zinc-400 text-sm">Web design landing page</div>
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-xs px-3 py-1 bg-zinc-800 rounded-full">Javascript</span>
-                            <span class="text-xs px-3 py-1 bg-zinc-800 rounded-full">Tailwind css</span>
-                        </div>
-                    </div>
-                    <p class="mt-4 text-zinc-400 line-clamp-2">Marketing website for Blaze Agencia.</p>
-                    <div class="flex gap-4 mt-8">
-                        <a href="https://blazeagencia.netlify.app/" target="_blank" class="flex-1 bg-orange-500 text-center py-4 rounded-2xl font-medium hover:bg-orange-600 transition">View</a>
-                        <a href="https://github.com/JeanRibeiro8/blaze-agencia" target="_blank" class="flex-1 border border-zinc-700 text-center py-4 rounded-2xl font-medium hover:bg-zinc-800 transition">Code</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ==================== PREMIUM WEBSITES ==================== -->
-
-            <!-- PROJECT 7 - PETALORA -->
-            <div class="project-card group card-hover bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800" data-category="premium">
-                <div class="h-80 bg-zinc-800 relative">
-                    <img src="./src/img-sites/petalora.png" alt="Petalora" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                </div>
-                <div class="p-8">
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <div class="font-semibold text-xl">PETALORA</div>
-                            <div class="text-zinc-400 text-sm">Web design Ecommerce</div>
-                        </div>
-                        <div class="flex gap-2">
-                            <span class="text-xs px-3 py-1 bg-zinc-800 rounded-full">Javascript</span>
-                            <span class="text-xs px-3 py-1 bg-zinc-800 rounded-full">Tailwind css</span>
-                        </div>
-                    </div>
-                    <p class="mt-4 text-zinc-400 line-clamp-2">Ecommerce website for Petalora.</p>
-                    <div class="flex gap-4 mt-8">
-                        <a href="./src/img-sites/petalora.png" target="_blank" class="flex-1 bg-orange-500 text-center py-4 rounded-2xl font-medium hover:bg-orange-600 transition">View</a>
-                        <a href="https://github.com/JeanRibeiro8" target="_blank" class="flex-1 border border-zinc-700 text-center py-4 rounded-2xl font-medium hover:bg-zinc-800 transition">Code</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+      <a href="#work" class="hover:text-[#00D5D2] transition-colors">Projetos</a>
+      <a href="#skills" class="hover:text-[#00D5D2] transition-colors">Competências</a>
+      <a href="#background" class="hover:text-[#00D5D2] transition-colors">Trajetória</a>
+      <a href="#about" class="hover:text-[#00D5D2] transition-colors">Sobre</a>
+      <a href="#contact" class="hover:text-[#00D5D2] transition-colors">Contato</a>
     </div>
+
+    <div class="flex items-center gap-3">
+      <a href="#contact" class="bg-[#026EB6] hover:bg-[#0052D6] px-4 sm:px-5 py-3 rounded-full text-sm font-semibold transition-all flex items-center gap-2">
+        Vamos conversar <i class="fas fa-arrow-right" aria-hidden="true"></i>
+      </a>
+      <button id="langBtn" type="button" class="w-11 h-11 rounded-full overflow-hidden border border-zinc-700 hover:border-[#00D5D2] transition shrink-0">
+        <svg id="flagBR" viewBox="0 0 32 32" class="w-full h-full" aria-hidden="true"><rect width="32" height="32" fill="#009c3b"/><path d="M16 5l12 11-12 11L4 16z" fill="#ffdf00"/><circle cx="16" cy="16" r="5.5" fill="#002776"/></svg>
+        <svg id="flagUS" viewBox="0 0 32 32" class="w-full h-full hidden" aria-hidden="true"><rect width="32" height="32" fill="#fff"/><g fill="#b22234"><rect y="0" width="32" height="2.5"/><rect y="4.9" width="32" height="2.5"/><rect y="9.8" width="32" height="2.5"/><rect y="14.8" width="32" height="2.5"/><rect y="19.7" width="32" height="2.5"/><rect y="24.6" width="32" height="2.5"/><rect y="29.5" width="32" height="2.5"/></g><rect width="16" height="17.2" fill="#3c3b6e"/></svg>
+      </button>
+      <button id="menuBtn" class="md:hidden w-11 h-11 rounded-full border border-zinc-700 flex items-center justify-center" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden border-t border-zinc-800 bg-zinc-950 px-6 py-4 space-y-4 text-base font-medium">
+    <a href="#work" class="block">Projetos</a>
+    <a href="#skills" class="block">Competências</a>
+    <a href="#background" class="block">Trajetória</a>
+    <a href="#about" class="block">Sobre</a>
+    <a href="#contact" class="block">Contato</a>
+  </div>
+</nav>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero-bg min-h-screen pt-24 flex items-center">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    <div class="space-y-8">
+      <div class="inline-flex items-center gap-2 bg-zinc-900 border border-gray-500/30 text-sm px-4 py-2 rounded-full">
+        <div class="w-2 h-2 bg-[#0052D6] rounded-full animate-pulse"></div>
+        Aberto a oportunidades – 2026
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight heading-font">
+        Desenvolvedor front-end júnior, focado em <span class="text-[#00D5D2]">interfaces rápidas</span> que funcionam em qualquer tela.
+      </h1>
+      <p class="text-xl text-zinc-400 max-w-lg">
+        Tenho 3 anos de formação técnica em informática e construo sites e interfaces com HTML, CSS, JavaScript e React. Estudo TypeScript e busco uma oportunidade em uma equipe de desenvolvimento para contribuir e continuar evoluindo.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#work" class="bg-[#026EB6] hover:bg-[#0052D6] px-8 py-4 rounded-full font-semibold text-lg inline-flex items-center gap-3 transition-all">
+          Ver projetos <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </a>
+        <a href="#contact" class="border border-zinc-700 hover:border-zinc-400 px-8 py-4 rounded-full font-semibold text-lg transition-all">Entrar em contato</a>
+        <!-- Quando tiver o currículo em PDF, descomente e ajuste o caminho:
+        <a href="./src/cv/Jean-Ribeiro-CV.pdf" download class="border border-zinc-700 hover:border-zinc-400 px-8 py-4 rounded-full font-semibold text-lg transition-all">Baixar currículo</a>
+        -->
+      </div>
+      <div class="flex gap-10 pt-4">
+        <div><div class="text-4xl font-semibold text-[#00D5D2]">5</div><div class="text-sm text-zinc-500">Projetos no portfólio</div></div>
+        <div><div class="text-4xl font-semibold text-[#00D5D2]">3 anos</div><div class="text-sm text-zinc-500">Formação técnica em TI</div></div>
+        <div><div class="text-4xl font-semibold text-[#00D5D2]">SP</div><div class="text-sm text-zinc-500">Lorena, Brasil</div></div>
+      </div>
+    </div>
+
+    <div class="relative">
+      <div class="aspect-square bg-zinc-900 rounded-3xl overflow-hidden border border-[#00D5D2]/20 shadow-2xl">
+        <img src="./src/img/profile.webp" alt="Jean Ribeiro, desenvolvedor front-end júnior" width="600" height="600" class="w-full h-full object-cover">
+      </div>
+      <div class="absolute -bottom-6 right-0 md:-right-6 bg-zinc-900 border border-[#00D5D2] rounded-2xl p-5 shadow-xl">
+        <div class="text-sm font-medium">Desenvolvedor Front-End Júnior</div>
+        <div class="text-[#00D5D2] text-lg font-semibold">JR | Jean Ribeiro</div>
+      </div>
+    </div>
+  </div>
 </section>
 
-    <!-- TESTIMONIALS 
-    <section id="testimonials" class="py-24 bg-zinc-900">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-5xl heading-font font-semibold text-center mb-16">Feedback</h2>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-zinc-950 p-8 rounded-3xl">
- <img src="./src/img/client1.png" alt="client" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                </div>
+<!-- TECH STACK -->
+<section class="py-14 border-b border-zinc-800" aria-label="Tecnologias">
+  <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center gap-x-10 gap-y-4 text-zinc-400 text-sm font-medium">
+    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Tailwind CSS</span><span>Bootstrap</span><span>SASS</span><span>Git/GitHub</span><span>Figma</span><span>WordPress</span>
+  </div>
+</section>
 
-                <div class="bg-zinc-950 p-8 rounded-3xl">
- <img src="./src/img/client2.png" alt="client" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                </div>
-
-                <div class="bg-zinc-950 p-8 rounded-3xl">
- <img src="./src/img/client3.png" alt="client" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                </div>
-                <div class="bg-zinc-950 p-8 rounded-3xl">
- <img src="./src/img/client4.png" alt="client" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                </div>
-
-                <div class="bg-zinc-950 p-8 rounded-3xl">
- <img src="./src/img/client5.png" alt="client" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                </div>
-
-            </div>
-        </div>
-    </section>
--->
-    <!-- CONTACT -->
-    <section id="contact" class="py-24 bg-zinc-950">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-20">
-                <div>
-                    <span class="text-orange-500 text-sm tracking-widest">05 — CONTACT</span>
-                    <h2 class="text-4xl md:text-5xl heading-font font-semibold mt-6 leading-none">Got a project in mind?</h2>
-                    <p class="text-3x1 text-zinc-400 max-w-lg">
-                        Tell me all about it. I reply to every message within 24 hours — usually with a few questions and ideas to get the project started.  </p>
-                    
-                    <div class="mt-12 space-y-6">
-                        <div class="flex items-center gap-4">
-                            <i class="fas fa-envelope text-orange-400"></i>
-                            <div>jeanrsantos10@gmail.com</div>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <i class="fas fa-globe text-orange-400"></i>
-                            <div>Remote • Lorena</div>
-                        </div>
-
-                                                <div class="flex items-center gap-4">
-                            <i class="fas fa-phone text-orange-400"></i>
-                            <div>(12) 99137-1731</div>
-                        </div>
-                    </div>
-                </div>
-                
-              <form class="space-y-6" action="https://formspree.io/f/xreoekev" method="POST">
-
-    <div class="grid grid-cols-2 gap-6">
-        <input type="text" name="nome" placeholder="Name" required
-               class="bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-5 focus:outline-none focus:border-orange-500">
-        <input type="email" name="email" placeholder="Email" required
-               class="bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-5 focus:outline-none focus:border-orange-500">
+<!-- PROJECTS -->
+<section id="work" class="py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12">
+      <div>
+        <h2 class="text-4xl md:text-5xl heading-font font-semibold">Projetos</h2>
+        <p class="text-zinc-400 mt-3 max-w-2xl">Projetos que fiz para praticar e demonstrar minhas habilidades. Cada card mostra as tecnologias usadas, com o site publicado e o código no GitHub quando disponíveis.</p>
+      </div>
+      <a href="#contact" class="text-[#00D5D2] hover:underline whitespace-nowrap">Entrar em contato <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
     </div>
 
-    <input type="text" name="orcamento" placeholder="Budget"
-           class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-5 focus:outline-none focus:border-orange-500">
+    <div id="projectsGrid" class="grid md:grid-cols-2 gap-8">
 
-    <textarea name="mensagem" placeholder="Tell me about the project..." rows="6" required
-              class="w-full bg-zinc-900 border border-zinc-700 rounded-3xl px-6 py-5 focus:outline-none focus:border-orange-500"></textarea>
-
-    <!-- Anti-spam honeypot field -->
-    <input type="text" name="_gotcha" style="display:none">
-
-    <input type="hidden" name="_subject" value="New message | JR Portfolio!">
-
-    <button type="submit"
-            class="w-full bg-gradient-to-r from-orange-500 to-orange-600 py-6 rounded-3xl font-semibold text-lg hover:scale-[1.02] transition-all">
-        Send Message →
-    </button>
-</form>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="bg-black py-12 border-t border-zinc-800">
-        <div class="max-w-7xl mx-auto px-6 text-center text-zinc-500 text-sm">
-            © 2026 created by JR.
-        </div>
-          <div class="social">
-  <a href="https://www.instagram.com/jr_web8/" target="_blank">
-    <i class="fa-brands fa-instagram"></i>
-  </a>
-
-  <a href="https://github.com/JeanRibeiro8?tab=repositories" target="_blank">
-    <i class="fa-brands fa-github"></i>
-  </a>
-
-  <a href="https://www.linkedin.com/in/jean-ribeiro-9a3792267/" target="_blank">
-    <i class="fa-brands fa-linkedin"></i>
-  </a>
+      <article class="project-card group card-hover bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800">
+      
+        <div class="h-80 bg-zinc-800 overflow-hidden">
+    <img
+        src="./src/img-sites/opshub.webp"
+        alt="OpsHub dashboard"
+        class="w-full h-full object-cover"
+        loading="lazy"
+    >
 </div>
-    </footer>
 
-    <script src="./src/script/script.js"></script>
- 
+        <div class="p-8">
+          <div class="flex justify-between items-start gap-4">
+            <div><h3 class="font-semibold text-xl">OpsHub</h3><div class="text-zinc-400 text-sm">Dashboard de Operações Empresariais</div></div>
+            <div class="flex gap-2 shrink-0"><span class="chip">React</span><span class="chip">TypeScript</span></div>
+          </div>
+          <p class="mt-4 text-zinc-400">Dashboard empresarial para gerenciar usuários, equipes, projetos, tarefas, relatórios, logs de auditoria e configurações do sistema.</p>
+          <div class="flex gap-4 mt-8">
+            <a href="https://opshub-phi.vercel.app/" target="_blank" rel="noopener" class="flex-1 bg-[#026EB6] text-center py-4 rounded-2xl font-medium hover:bg-[#0052D6] transition">Ver site</a>
+            <a href="https://github.com/JeanRibeiro8/opshub" target="_blank" rel="noopener" class="flex-1 border border-zinc-700 text-center py-4 rounded-2xl font-medium hover:bg-zinc-800 transition">Código</a>
+          </div>
+        </div>
+      </article>
 
-    <!-- GSAP CDN -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+      <article class="project-card group card-hover bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800">
+      
+         <div class="h-80 bg-zinc-800 overflow-hidden">
+    <img
+        src="./src/img-sites/dev.webp"
+        alt="DevInsight dashboard"
+        class="w-full h-full object-cover"
+        loading="lazy"
+    >
+</div>
 
-<script>
+        <div class="p-8">
+          <div class="flex justify-between items-start gap-4">
+            <div><h3 class="font-semibold text-xl">DevInsight</h3><div class="text-zinc-400 text-sm">Dashboard de Analytics de Engenharia</div></div>
+            <div class="flex gap-2 shrink-0"><span class="chip">React</span><span class="chip">TypeScript</span></div>
+          </div>
+          <p class="mt-4 text-zinc-400">Dashboard de analytics de engenharia para monitorar repositórios, pull requests, code reviews, atividade da equipe, riscos e recomendações no estilo de IA.</p>
+          <div class="flex gap-4 mt-8">
+            <a href="https://devinsight.vercel.app/" target="_blank" rel="noopener" class="flex-1 bg-[#026EB6] text-center py-4 rounded-2xl font-medium hover:bg-[#0052D6] transition">Ver site</a>
+            <a href="https://github.com/JeanRibeiro8/devinsight" target="_blank" rel="noopener" class="flex-1 border border-zinc-700 text-center py-4 rounded-2xl font-medium hover:bg-zinc-800 transition">Código</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card group card-hover bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800">
+       
+         <div class="h-80 bg-zinc-800 overflow-hidden">
+    <img
+        src="./src/img-sites/job.webp"
+        alt="Jobly"
+        class="w-full h-full object-cover"
+        loading="lazy"
+    >
+</div>
+
+        <div class="p-8">
+          <div class="flex justify-between items-start gap-4">
+            <div><h3 class="font-semibold text-xl">Jobly</h3><div class="text-zinc-400 text-sm">Aplicação de Vagas</div></div>
+            <div class="flex gap-2 shrink-0"><span class="chip">React</span><span class="chip">TypeScript</span></div>
+          </div>
+          <p class="mt-4 text-zinc-400">Job board responsivo com busca, filtros, paginação, estados de carregamento, erro e resultados vazios, integrado a uma API REST externa.</p>
+          <div class="flex gap-4 mt-8">
+            <a href="https://jobly-omega-rose.vercel.app/" target="_blank" rel="noopener" class="flex-1 bg-[#026EB6] text-center py-4 rounded-2xl font-medium hover:bg-[#0052D6] transition">Ver site</a>
+            <a href="https://github.com/JeanRibeiro8/jobly" target="_blank" rel="noopener" class="flex-1 border border-zinc-700 text-center py-4 rounded-2xl font-medium hover:bg-zinc-800 transition">Código</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card group card-hover bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800">
+       <div class="h-80 bg-zinc-800 overflow-hidden">
+    <img
+        src="./src/img-sites/react-p.webp"
+        alt="React Performance"
+        class="w-full h-full object-cover"
+        loading="lazy"
+    >
+</div>
+      
+        <div class="p-8">
+          <div class="flex justify-between items-start gap-4">
+            <div><h3 class="font-semibold text-xl">React Performance</h3><div class="text-zinc-400 text-sm">Projeto de Performance em React</div></div>
+            <div class="flex gap-2 shrink-0"><span class="chip">React</span><span class="chip">TypeScript</span></div>
+          </div>
+          <p class="mt-4 text-zinc-400">Projeto em React e TypeScript voltado ao estudo de performance, comportamento de componentes e otimização do front-end.</p>
+          <div class="flex gap-4 mt-8">
+            <a href="https://react-performance-lab-chi.vercel.app/" target="_blank" rel="noopener" class="flex-1 bg-[#026EB6] text-center py-4 rounded-2xl font-medium hover:bg-[#0052D6] transition">Ver site</a>
+            <a href="https://github.com/JeanRibeiro8/react-performance-lab" target="_blank" rel="noopener" class="flex-1 border border-zinc-700 text-center py-4 rounded-2xl font-medium hover:bg-zinc-800 transition">Código</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card group card-hover bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800">
+        <div class="h-80 bg-zinc-800 overflow-hidden">
+    <img
+        src="./src/img-sites/code.webp"
+        alt="CodeLens dashboard"
+        class="w-full h-full object-cover"
+        loading="lazy"
+    >
+</div>
+
+        <div class="p-8">
+          <div class="flex justify-between items-start gap-4">
+            <div><h3 class="font-semibold text-xl">CodeLens</h3><div class="text-zinc-400 text-sm">Ferramenta de Análise Estática de Código</div></div>
+            <div class="flex gap-2 shrink-0"><span class="chip">React</span><span class="chip">TypeScript</span></div>
+          </div>
+          <p class="mt-4 text-zinc-400">Ferramenta de análise estática para JavaScript e TypeScript usando AST, métricas de código, detecção de problemas, sugestões e análise assistida por IA.</p>
+          <div class="flex gap-4 mt-8">
+            <a href="https://codelens-sepia-eight.vercel.app/" target="_blank" rel="noopener" class="flex-1 bg-[#026EB6] text-center py-4 rounded-2xl font-medium hover:bg-[#0052D6] transition">Ver site</a>
+            <a href="https://github.com/JeanRibeiro8/codelens" target="_blank" rel="noopener" class="flex-1 border border-zinc-700 text-center py-4 rounded-2xl font-medium hover:bg-zinc-800 transition">Código</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-24 bg-zinc-900">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl md:text-5xl heading-font font-semibold">Competências</h2>
+    <p class="text-zinc-400 mt-3 max-w-2xl">Tecnologias que uso nos projetos e as que estou aprendendo agora.</p>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+      <div class="bg-zinc-950 p-8 rounded-3xl border border-zinc-800">
+        <h3 class="font-semibold text-lg mb-5">Front-end</h3>
+        <div class="flex flex-wrap gap-2"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">React</span><span class="chip">Tailwind CSS</span><span class="chip">Bootstrap</span><span class="chip">SASS</span></div>
+      </div>
+      <div class="bg-zinc-950 p-8 rounded-3xl border border-zinc-800">
+        <h3 class="font-semibold text-lg mb-5">Ferramentas e práticas</h3>
+        <div class="flex flex-wrap gap-2"><span class="chip">Git/GitHub</span><span class="chip">Figma</span><span class="chip">APIs REST</span><span class="chip">Design responsivo</span><span class="chip">Debugging</span><span class="chip">Agile</span><span class="chip">Webpack</span></div>
+      </div>
+      <div class="bg-zinc-950 p-8 rounded-3xl border border-zinc-800">
+        <h3 class="font-semibold text-lg mb-5">CMS e back-end básico</h3>
+        <div class="flex flex-wrap gap-2"><span class="chip">WordPress</span><span class="chip">Elementor</span><span class="chip">PHP</span><span class="chip">SQL</span></div>
+      </div>
+      <div class="bg-zinc-950 p-8 rounded-3xl border border-zinc-800">
+        <h3 class="font-semibold text-lg mb-5">Estudando agora</h3>
+        <div class="flex flex-wrap gap-2"><span class="chip">TypeScript</span><span class="chip">React Native</span><span class="chip">Redux</span><span class="chip">Node.js</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BACKGROUND -->
+<section id="background" class="py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl md:text-5xl heading-font font-semibold">Formação e experiência</h2>
+    <div class="grid md:grid-cols-3 gap-6 mt-12">
+      <div class="bg-zinc-900 p-8 rounded-3xl border border-zinc-800">
+        <h3 class="font-semibold text-lg">Curso técnico em informática</h3>
+        <p class="text-zinc-400 mt-3 text-sm">3 anos de formação técnica na área de TI.</p>
+      </div>
+      <div class="bg-zinc-900 p-8 rounded-3xl border border-zinc-800">
+        <h3 class="font-semibold text-lg">Desenvolvedor front-end freelancer</h3>
+        <p class="text-zinc-400 mt-3 text-sm">Criação de landing pages e sites responsivos em projetos pessoais e de estudo, do layout no Figma à publicação.</p>
+      </div>
+      <div class="bg-zinc-900 p-8 rounded-3xl border border-zinc-800">
+        <h3 class="font-semibold text-lg">Estudo contínuo</h3>
+        <p class="text-zinc-400 mt-3 text-sm">React, TypeScript, React Native, Redux e Node.js.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-24 bg-zinc-900">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-16">
+    <div class="md:col-span-5">
+      <h2 class="text-4xl md:text-5xl heading-font font-semibold leading-tight">
+        Mente de desenvolvedor.<br><span class="text-[#00D5D2]">Olhar de designer.</span>
+      </h2>
+    </div>
+    <div class="md:col-span-7 space-y-6 text-lg text-zinc-400">
+      <p>Sou o Jean, desenvolvedor front-end júnior de Lorena (SP). Gosto de transformar layouts em interfaces limpas, rápidas e fáceis de usar, e de entender o design por trás delas: uso Figma e tenho noções de UI/UX.</p>
+      <p>Estou no início da carreira e busco um ambiente onde possa aprender com pessoas mais experientes, receber feedback e contribuir com código de qualidade.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-24">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16">
+    <div>
+      <h2 class="text-4xl md:text-5xl heading-font font-semibold leading-tight">Vamos conversar?</h2>
+      <p class="text-zinc-400 max-w-lg mt-6">Está recrutando ou quer saber mais sobre algum projeto? Envie uma mensagem. Respondo em até 24 horas.</p>
+      <div class="mt-10 space-y-5">
+        <div class="flex items-center gap-4"><i class="fas fa-envelope text-[#00D5D2]" aria-hidden="true"></i><a href="mailto:jeanrsantos10@gmail.com" class="hover:text-[#00D5D2]">jeanrsantos10@gmail.com</a></div>
+        <div class="flex items-center gap-4"><i class="fa-brands fa-linkedin text-[#00D5D2]" aria-hidden="true"></i><a href="https://www.linkedin.com/in/jean-ribeiro-9a3792267/" target="_blank" rel="noopener noreferrer" class="hover:text-[#00D5D2]">LinkedIn</a></div>
+        <div class="flex items-center gap-4"><i class="fa-brands fa-github text-[#00D5D2]" aria-hidden="true"></i><a href="https://github.com/JeanRibeiro8" target="_blank" rel="noopener noreferrer" class="hover:text-[#00D5D2]">GitHub</a></div>
+        <div class="flex items-center gap-4"><i class="fas fa-location-dot text-[#00D5D2]" aria-hidden="true"></i><span>Lorena, SP, Brasil</span></div>
+      </div>
+    </div>
+
+    <form id="contactForm" class="space-y-6" action="https://formspree.io/f/xreoekev" method="POST">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <input type="text" name="nome" placeholder="Nome" aria-label="Nome" required class="bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-5 focus:outline-none focus:border-[#00D5D2]">
+        <input type="email" name="email" placeholder="E-mail" aria-label="E-mail" required class="bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-5 focus:outline-none focus:border-[#00D5D2]">
+      </div>
+      <input type="text" name="empresa" placeholder="Empresa (opcional)" aria-label="Empresa" class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-5 focus:outline-none focus:border-[#00D5D2]">
+      <textarea name="mensagem" placeholder="Escreva sua mensagem..." aria-label="Mensagem" rows="6" required class="w-full bg-zinc-900 border border-zinc-700 rounded-3xl px-6 py-5 focus:outline-none focus:border-[#00D5D2]"></textarea>
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+      <input type="hidden" name="_subject" value="Nova mensagem | Portfólio para empresas">
+      <button type="submit" class="w-full bg-gradient-to-r from-[#00D5D2] to-[#0052D6] py-5 rounded-3xl font-semibold text-lg hover:scale-[1.02] transition-all">Enviar mensagem</button>
+      <p id="formStatus" class="text-center text-sm" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-black py-12 border-t border-zinc-800">
+  <div class="max-w-7xl mx-auto px-6 text-center text-zinc-500 text-sm">© 2026 Jean Ribeiro</div>
+  <div class="social">
+    <a href="https://github.com/JeanRibeiro8?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/jean-ribeiro-9a3792267/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script defer>
+window.addEventListener('load', () => {
+  if (!window.gsap || !window.ScrollTrigger || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   gsap.registerPlugin(ScrollTrigger);
+  gsap.from('.hero-bg .space-y-8 > *', { opacity: 0, y: 40, duration: 0.9, stagger: 0.15, ease: 'power3.out', delay: 0.2 });
+  gsap.from('.hero-bg .relative', { opacity: 0, x: 60, duration: 1.1, ease: 'power3.out', delay: 0.4 });
+  gsap.from('#skills .grid > div', { opacity: 0, y: 40, duration: 0.8, stagger: 0.12, ease: 'power3.out', scrollTrigger: { trigger: '#skills', start: 'top 80%', once: true } });
+  gsap.from('#contact form', { opacity: 0, y: 30, duration: 0.9, ease: 'power3.out', scrollTrigger: { trigger: '#contact', start: 'top 80%', once: true } });
+});
 
-  // ======================
-  // HERO
-  // ======================
-  gsap.from(".hero-bg .space-y-8 > *", {
-    opacity: 0,
-    y: 40,
-    duration: 0.9,
-    stagger: 0.15,
-    ease: "power3.out",
-    delay: 0.2
-  });
-
-  gsap.from(".hero-bg .relative", {
-    opacity: 0,
-    x: 60,
-    duration: 1.1,
-    ease: "power3.out",
-    delay: 0.4
-  });
-
-  // ======================
-  // SKILL BARS
-  // ======================
-  gsap.utils.toArray(".progress-bar").forEach(bar => {
-    const width = bar.classList.contains("w-[80%]") ? "80%" : "70%";
-    
-    gsap.fromTo(bar, 
-      { width: "0%" },
-      {
-        width: width,
-        duration: 1.6,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: bar,
-          start: "top 90%",
-          once: true
-        }
-      }
-    );
-  });
-
-  // ======================
-  // ABOUT
-  // ======================
-  gsap.from("#about .md\\:col-span-5", {
-    opacity: 0,
-    x: -40,
-    duration: 1,
-    ease: "power3.out",
-    scrollTrigger: {
-      trigger: "#about",
-      start: "top 80%"
-    }
-  });
-
-  gsap.from("#about .md\\:col-span-7 > *", {
-    opacity: 0,
-    y: 30,
-    duration: 0.8,
-    stagger: 0.1,
-    ease: "power3.out",
-    scrollTrigger: {
-      trigger: "#about",
-      start: "top 75%"
-    }
-  });
-
-  // ======================
-  // SKILLS
-  // ======================
-  gsap.from("#skills .grid > div", {
-    opacity: 0,
-    y: 40,
-    duration: 0.8,
-    stagger: 0.12,
-    ease: "power3.out",
-    scrollTrigger: {
-      trigger: "#skills",
-      start: "top 80%"
-    }
-  });
-
-
-  // ======================
-  // CONTACT
-  // ======================
-  gsap.from("#contact .grid > div:first-child", {
-    opacity: 0,
-    x: -40,
-    duration: 1,
-    ease: "power3.out",
-    scrollTrigger: {
-      trigger: "#contact",
-      start: "top 80%"
-    }
-  });
-
-  gsap.from("#contact form", {
-    opacity: 0,
-    x: 40,
-    duration: 1,
-    ease: "power3.out",
-    scrollTrigger: {
-      trigger: "#contact",
-      start: "top 80%"
-    }
-  });
-</script>
+<script src="./src/script/script.js"></script>
 
 </body>
 </html>
